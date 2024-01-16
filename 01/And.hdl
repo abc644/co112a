@@ -11,8 +11,10 @@
 
 CHIP And {
     IN a, b;
-    OUT out;
+    OUT out; //找名稱為out的變數輸出
 
     PARTS:
     // Put your code here:
+    Nand(a=a, b=b, out=result);
+    Not(in=result, out=out);
 }
